@@ -37,6 +37,10 @@ export default function ContadorSimples() {
       {/* Valor do Contador */}
       <Text style={styles.textContador}>{contador}</Text>
       </View>
+      <View style={styles.textMensagem}>
+      {/* Mensagem de feedback */}
+          <Text>{contador === 0 ? mensagemReset() : contador > 0 ? mensagemaumentar() : mensagemDiminuir()}</Text>
+      </View>
 
       {/* Botões de Controle */}
       <View style={styles.botoes}>
@@ -76,11 +80,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 30,
   },
   textContador: {
     fontSize: 50,
     fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  textMensagem: {
+    fontSize: 20,
+    marginTop: 20,
+    marginBottom: 20,
+    color: '#333',
   },
   botoes: {
     flexDirection: 'row',
