@@ -1,4 +1,4 @@
 # COntador 👋
 
 1. Imagem
-   ![Tela inicial](assets/imagens/imagemAPP.png)
+   ![Tela inicial](assets/images/imagemAPP.png)
